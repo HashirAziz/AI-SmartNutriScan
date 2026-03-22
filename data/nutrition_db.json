@@ -1,0 +1,250 @@
+{
+  "apple": {
+    "calories": 52, "protein": 0.3, "carbs": 14, "fat": 0.2, "fiber": 2.4, "sugar": 10,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Potassium", "Magnesium"],
+    "dietary_tags": ["Vegan", "Gluten-Free", "Low Fat", "Low Calorie"],
+    "disease_prevention": ["Reduces risk of heart disease", "Supports gut health", "Lowers cholesterol"],
+    "advice": "Best consumed in the morning. Eat with skin for maximum fiber."
+  },
+  "banana": {
+    "calories": 89, "protein": 1.1, "carbs": 23, "fat": 0.3, "fiber": 2.6, "sugar": 12,
+    "vitamins": ["Vitamin B6", "Vitamin C"],
+    "minerals": ["Potassium", "Magnesium"],
+    "dietary_tags": ["Vegan", "Gluten-Free", "High Carb", "Energy Boost"],
+    "disease_prevention": ["Supports heart health", "Regulates blood pressure", "Improves digestion"],
+    "advice": "Great pre-workout snack. Avoid if managing blood sugar closely."
+  },
+  "orange": {
+    "calories": 47, "protein": 0.9, "carbs": 12, "fat": 0.1, "fiber": 2.4, "sugar": 9,
+    "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+    "minerals": ["Calcium", "Potassium"],
+    "dietary_tags": ["Vegan", "Gluten-Free", "Low Fat", "Immune Booster"],
+    "disease_prevention": ["Boosts immunity", "Reduces inflammation", "Supports skin health"],
+    "advice": "Eat whole rather than juiced to retain fiber content."
+  },
+  "mango": {
+    "calories": 60, "protein": 0.8, "carbs": 15, "fat": 0.4, "fiber": 1.6, "sugar": 14,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin B6"],
+    "minerals": ["Potassium", "Copper"],
+    "dietary_tags": ["Vegan", "Gluten-Free", "High Sugar", "Tropical"],
+    "disease_prevention": ["Supports eye health", "Boosts immunity", "Aids digestion"],
+    "advice": "Consume in moderation if diabetic. Best eaten fresh."
+  },
+  "grapes": {
+    "calories": 69, "protein": 0.7, "carbs": 18, "fat": 0.2, "fiber": 0.9, "sugar": 16,
+    "vitamins": ["Vitamin C", "Vitamin K"],
+    "minerals": ["Potassium", "Copper"],
+    "dietary_tags": ["Vegan", "Gluten-Free", "Antioxidant-Rich"],
+    "disease_prevention": ["Protects against heart disease", "Anti-inflammatory", "Supports brain health"],
+    "advice": "Red/purple grapes have more antioxidants than green. Eat in moderation."
+  },
+  "avocado": {
+    "calories": 160, "protein": 2, "carbs": 9, "fat": 15, "fiber": 7, "sugar": 0.7,
+    "vitamins": ["Vitamin K", "Vitamin E", "Vitamin C", "Folate"],
+    "minerals": ["Potassium", "Magnesium"],
+    "dietary_tags": ["Vegan", "Keto", "High Fat", "Gluten-Free", "Heart Healthy"],
+    "disease_prevention": ["Lowers bad cholesterol", "Supports heart health", "Aids nutrient absorption"],
+    "advice": "Excellent healthy fat source. Pair with salads or toast for balanced meal."
+  },
+  "strawberry": {
+    "calories": 32, "protein": 0.7, "carbs": 7.7, "fat": 0.3, "fiber": 2, "sugar": 4.9,
+    "vitamins": ["Vitamin C", "Folate"],
+    "minerals": ["Potassium", "Manganese"],
+    "dietary_tags": ["Vegan", "Gluten-Free", "Low Calorie", "Keto-Friendly"],
+    "disease_prevention": ["Reduces inflammation", "Supports heart health", "Regulates blood sugar"],
+    "advice": "One of the best low-calorie sweet snacks. Great for weight management."
+  },
+  "watermelon": {
+    "calories": 30, "protein": 0.6, "carbs": 7.6, "fat": 0.2, "fiber": 0.4, "sugar": 6.2,
+    "vitamins": ["Vitamin A", "Vitamin C"],
+    "minerals": ["Potassium", "Magnesium"],
+    "dietary_tags": ["Vegan", "Gluten-Free", "Low Calorie", "Hydrating"],
+    "disease_prevention": ["Hydrates body", "Reduces muscle soreness", "Supports heart health"],
+    "advice": "Excellent summer hydration food. 92% water content."
+  },
+  "pizza": {
+    "calories": 266, "protein": 11, "carbs": 33, "fat": 10, "fiber": 2.3, "sugar": 3.6,
+    "vitamins": ["Vitamin A", "Vitamin B12"],
+    "minerals": ["Calcium", "Iron"],
+    "dietary_tags": ["High Calorie", "High Carb", "Contains Dairy", "Contains Gluten"],
+    "disease_prevention": ["Provides calcium for bone health (in moderation)"],
+    "advice": "Consume occasionally. Opt for thin crust and veggie toppings to reduce calories."
+  },
+  "burger": {
+    "calories": 295, "protein": 17, "carbs": 24, "fat": 14, "fiber": 1.3, "sugar": 5,
+    "vitamins": ["Vitamin B12", "Vitamin B6"],
+    "minerals": ["Iron", "Zinc"],
+    "dietary_tags": ["High Calorie", "High Protein", "High Fat", "Contains Gluten"],
+    "disease_prevention": ["Provides iron for blood health (in moderation)"],
+    "advice": "Limit to once a week. Choose grilled over fried and add vegetables."
+  },
+  "sandwich": {
+    "calories": 210, "protein": 9, "carbs": 28, "fat": 7, "fiber": 2.5, "sugar": 4,
+    "vitamins": ["Vitamin B6", "Vitamin D"],
+    "minerals": ["Calcium", "Iron"],
+    "dietary_tags": ["Balanced", "Contains Gluten", "Moderate Calorie"],
+    "disease_prevention": ["Balanced macros support sustained energy"],
+    "advice": "Use whole grain bread and lean protein for a healthier version."
+  },
+  "french fries": {
+    "calories": 312, "protein": 3.4, "carbs": 41, "fat": 15, "fiber": 3.8, "sugar": 0.3,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Potassium", "Iron"],
+    "dietary_tags": ["High Calorie", "High Fat", "High Carb", "Vegan"],
+    "disease_prevention": ["Minimal health benefits when deep fried"],
+    "advice": "Bake instead of fry to cut calories by 50%. Limit sodium intake."
+  },
+  "pasta": {
+    "calories": 131, "protein": 5, "carbs": 25, "fat": 1.1, "fiber": 1.8, "sugar": 0.6,
+    "vitamins": ["Vitamin B1", "Folate"],
+    "minerals": ["Iron", "Magnesium"],
+    "dietary_tags": ["High Carb", "Contains Gluten", "Vegetarian", "Energy Boost"],
+    "disease_prevention": ["Provides sustained energy", "Supports muscle recovery"],
+    "advice": "Choose whole wheat pasta. Avoid heavy cream sauces."
+  },
+  "rice": {
+    "calories": 130, "protein": 2.7, "carbs": 28, "fat": 0.3, "fiber": 0.4, "sugar": 0,
+    "vitamins": ["Vitamin B1", "Vitamin B3"],
+    "minerals": ["Magnesium", "Phosphorus"],
+    "dietary_tags": ["Vegan", "Gluten-Free", "High Carb", "Staple Food"],
+    "disease_prevention": ["Provides quick energy", "Easy to digest"],
+    "advice": "Prefer brown rice over white for more fiber and nutrients."
+  },
+  "biryani": {
+    "calories": 290, "protein": 12, "carbs": 40, "fat": 9, "fiber": 1.5, "sugar": 2,
+    "vitamins": ["Vitamin B12", "Vitamin A"],
+    "minerals": ["Iron", "Zinc"],
+    "dietary_tags": ["High Calorie", "High Carb", "Contains Spices", "South Asian"],
+    "disease_prevention": ["Spices provide anti-inflammatory benefits"],
+    "advice": "Consume in moderation. Pair with raita for better digestion."
+  },
+  "grilled chicken": {
+    "calories": 165, "protein": 31, "carbs": 0, "fat": 3.6, "fiber": 0, "sugar": 0,
+    "vitamins": ["Vitamin B6", "Vitamin B12"],
+    "minerals": ["Phosphorus", "Selenium"],
+    "dietary_tags": ["High Protein", "Low Fat", "Keto", "Gluten-Free", "Low Carb"],
+    "disease_prevention": ["Supports muscle growth", "Boosts metabolism", "Strengthens bones"],
+    "advice": "One of the best lean protein sources. Ideal post-workout meal."
+  },
+  "fried chicken": {
+    "calories": 320, "protein": 28, "carbs": 11, "fat": 19, "fiber": 0.4, "sugar": 0,
+    "vitamins": ["Vitamin B6", "Vitamin B12"],
+    "minerals": ["Phosphorus", "Iron"],
+    "dietary_tags": ["High Protein", "High Fat", "High Calorie", "Contains Gluten"],
+    "disease_prevention": ["High protein supports muscles but frying reduces benefits"],
+    "advice": "Opt for air-fried version to reduce fat by 70%. Remove skin to cut calories."
+  },
+  "sushi": {
+    "calories": 145, "protein": 6, "carbs": 28, "fat": 1, "fiber": 0.5, "sugar": 3,
+    "vitamins": ["Vitamin D", "Vitamin B12"],
+    "minerals": ["Iodine", "Selenium"],
+    "dietary_tags": ["Low Fat", "Contains Seafood", "Japanese", "Gluten-Free"],
+    "disease_prevention": ["Supports thyroid health", "Rich in omega-3 (salmon rolls)", "Brain health"],
+    "advice": "Avoid soy sauce overuse due to high sodium. Choose brown rice options."
+  },
+  "salad": {
+    "calories": 20, "protein": 1.5, "carbs": 3.5, "fat": 0.2, "fiber": 2, "sugar": 1.5,
+    "vitamins": ["Vitamin A", "Vitamin C", "Vitamin K"],
+    "minerals": ["Calcium", "Iron"],
+    "dietary_tags": ["Vegan", "Gluten-Free", "Low Calorie", "Keto-Friendly", "Weight Loss"],
+    "disease_prevention": ["Reduces cancer risk", "Supports digestion", "Anti-inflammatory"],
+    "advice": "Add protein like chicken or eggs to make it a complete meal."
+  },
+  "omelette": {
+    "calories": 154, "protein": 11, "carbs": 1, "fat": 12, "fiber": 0, "sugar": 0.5,
+    "vitamins": ["Vitamin D", "Vitamin B12", "Vitamin A"],
+    "minerals": ["Selenium", "Phosphorus"],
+    "dietary_tags": ["High Protein", "Low Carb", "Keto", "Gluten-Free", "Vegetarian"],
+    "disease_prevention": ["Supports eye health", "Brain development", "Muscle repair"],
+    "advice": "Use olive oil instead of butter. Add vegetables for extra nutrients."
+  },
+  "pancakes": {
+    "calories": 227, "protein": 6, "carbs": 28, "fat": 10, "fiber": 1, "sugar": 6,
+    "vitamins": ["Vitamin B1", "Vitamin B2"],
+    "minerals": ["Calcium", "Iron"],
+    "dietary_tags": ["High Carb", "Contains Gluten", "Vegetarian", "Breakfast"],
+    "disease_prevention": ["Provides quick energy for morning activity"],
+    "advice": "Use whole wheat flour and reduce sugar. Top with fresh fruits instead of syrup."
+  },
+  "bread": {
+    "calories": 265, "protein": 9, "carbs": 49, "fat": 3.2, "fiber": 2.7, "sugar": 5,
+    "vitamins": ["Vitamin B1", "Folate"],
+    "minerals": ["Iron", "Selenium"],
+    "dietary_tags": ["High Carb", "Contains Gluten", "Vegetarian", "Staple Food"],
+    "disease_prevention": ["Fortified bread provides essential B vitamins"],
+    "advice": "Choose whole grain or sourdough over white bread for better nutrition."
+  },
+  "yogurt": {
+    "calories": 59, "protein": 10, "carbs": 3.6, "fat": 0.4, "fiber": 0, "sugar": 3.2,
+    "vitamins": ["Vitamin B12", "Vitamin D"],
+    "minerals": ["Calcium", "Phosphorus"],
+    "dietary_tags": ["High Protein", "Low Fat", "Probiotic", "Vegetarian", "Keto-Friendly"],
+    "disease_prevention": ["Improves gut health", "Strengthens immunity", "Supports bone density"],
+    "advice": "Choose plain Greek yogurt over flavored to avoid added sugars."
+  },
+  "chocolate cake": {
+    "calories": 371, "protein": 5, "carbs": 51, "fat": 17, "fiber": 2, "sugar": 36,
+    "vitamins": ["Vitamin B2", "Vitamin D"],
+    "minerals": ["Iron", "Calcium"],
+    "dietary_tags": ["High Calorie", "High Sugar", "High Fat", "Contains Gluten", "Dessert"],
+    "disease_prevention": ["Dark chocolate has antioxidants (minimal in cake form)"],
+    "advice": "Treat occasionally. Limit to small portions. Pair with black coffee to balance sweetness."
+  },
+  "ice cream": {
+    "calories": 207, "protein": 3.5, "carbs": 24, "fat": 11, "fiber": 0.7, "sugar": 21,
+    "vitamins": ["Vitamin A", "Vitamin B12"],
+    "minerals": ["Calcium", "Phosphorus"],
+    "dietary_tags": ["High Sugar", "High Fat", "Contains Dairy", "Dessert"],
+    "disease_prevention": ["Calcium supports bone health (in moderation)"],
+    "advice": "Limit to one scoop. Opt for frozen yogurt or sorbet as healthier alternatives."
+  },
+  "donut": {
+    "calories": 452, "protein": 5, "carbs": 51, "fat": 25, "fiber": 1.5, "sugar": 21,
+    "vitamins": ["Vitamin B1"],
+    "minerals": ["Iron", "Calcium"],
+    "dietary_tags": ["High Calorie", "High Sugar", "High Fat", "Contains Gluten", "Junk Food"],
+    "disease_prevention": ["Very minimal nutritional benefit"],
+    "advice": "Avoid regular consumption. Max once a week as an occasional treat."
+  },
+  "steak": {
+    "calories": 271, "protein": 26, "carbs": 0, "fat": 18, "fiber": 0, "sugar": 0,
+    "vitamins": ["Vitamin B12", "Vitamin B6", "Vitamin D"],
+    "minerals": ["Iron", "Zinc", "Selenium"],
+    "dietary_tags": ["High Protein", "High Fat", "Keto", "Gluten-Free", "Low Carb"],
+    "disease_prevention": ["Supports muscle growth", "Boosts iron levels", "Brain health"],
+    "advice": "Choose lean cuts like sirloin. Limit to 2-3 times per week."
+  },
+  "salmon": {
+    "calories": 208, "protein": 20, "carbs": 0, "fat": 13, "fiber": 0, "sugar": 0,
+    "vitamins": ["Vitamin D", "Vitamin B12", "Vitamin B6"],
+    "minerals": ["Selenium", "Potassium"],
+    "dietary_tags": ["High Protein", "Omega-3 Rich", "Keto", "Gluten-Free", "Heart Healthy"],
+    "disease_prevention": ["Reduces heart disease risk", "Supports brain health", "Anti-inflammatory"],
+    "advice": "One of the healthiest proteins. Aim for 2 servings per week."
+  },
+  "dal": {
+    "calories": 116, "protein": 9, "carbs": 20, "fat": 0.4, "fiber": 8, "sugar": 1.8,
+    "vitamins": ["Folate", "Vitamin B1"],
+    "minerals": ["Iron", "Potassium", "Magnesium"],
+    "dietary_tags": ["Vegan", "High Fiber", "High Protein", "Gluten-Free", "South Asian"],
+    "disease_prevention": ["Lowers cholesterol", "Controls blood sugar", "Supports heart health"],
+    "advice": "Excellent plant-based protein. Pair with brown rice or chapati."
+  },
+  "chapati": {
+    "calories": 104, "protein": 3.1, "carbs": 18, "fat": 2.5, "fiber": 2.5, "sugar": 0.3,
+    "vitamins": ["Vitamin B1", "Vitamin B3"],
+    "minerals": ["Iron", "Magnesium"],
+    "dietary_tags": ["Vegan", "Low Fat", "High Fiber", "South Asian", "Staple Food"],
+    "disease_prevention": ["Supports digestion", "Provides sustained energy", "Regulates blood sugar"],
+    "advice": "Whole wheat chapati is healthier than maida. Limit butter/ghee topping."
+  },
+  "samosa": {
+    "calories": 262, "protein": 3.5, "carbs": 28, "fat": 15, "fiber": 2, "sugar": 1.5,
+    "vitamins": ["Vitamin C", "Vitamin B6"],
+    "minerals": ["Iron", "Potassium"],
+    "dietary_tags": ["High Fat", "High Carb", "Fried", "South Asian", "Vegetarian"],
+    "disease_prevention": ["Minimal — deep frying reduces nutritional value"],
+    "advice": "Baked samosas are a healthier alternative. Limit to 1-2 per serving."
+  }
+}
