@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI-SmartNutriScan</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <i class="fas fa-leaf"></i>
+      <span>SmartNutriScan</span>
+    </div>
+    <div class="nav-tag">Powered by CLIP AI</div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Scan Your Food.<br/><span>Know What You Eat.</span></h1>
+      <p>Upload a food photo and get instant nutrition analysis, health score, and personalized advice — powered by AI.</p>
+    </div>
+  </section>
+
+  <!-- ── MAIN CARD ── -->
+  <main class="container">
+    <div class="upload-card">
+
+      <!-- Upload Zone -->
+      <div class="upload-zone" id="uploadZone">
+        <input type="file" id="fileInput" accept="image/*" hidden/>
+        <div class="upload-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <p class="upload-title">Drop your food image here</p>
+        <p class="upload-sub">or</p>
+        <div class="upload-buttons">
+          <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">
+            <i class="fas fa-image"></i> Browse Image
+          </button>
+          <button class="btn btn-secondary" id="cameraBtn">
+            <i class="fas fa-camera"></i> Use Camera
+          </button>
+        </div>
+        <p class="upload-hint">Supports JPG, PNG, WEBP · Max 10MB</p>
+      </div>
+
+      <!-- Camera View -->
+      <div class="camera-view hidden" id="cameraView">
+        <video id="videoStream" autoplay playsinline></video>
+        <div class="camera-controls">
+          <button class="btn btn-primary" id="captureBtn">
+            <i class="fas fa-circle"></i> Capture
+          </button>
+          <button class="btn btn-outline" id="closeCameraBtn">
+            <i class="fas fa-times"></i> Cancel
+          </button>
+        </div>
+        <canvas id="captureCanvas" hidden></canvas>
+      </div>
+
+      <!-- Preview -->
+      <div class="preview-zone hidden" id="previewZone">
+        <img id="previewImg" src="" alt="Food Preview"/>
+        <div class="preview-actions">
+          <button class="btn btn-primary" id="analyzeBtn">
+            <i class="fas fa-microscope"></i> Analyze Food
+          </button>
+          <button class="btn btn-outline" id="resetBtn">
+            <i class="fas fa-redo"></i> Reset
+          </button>
+        </div>
+      </div>
+
+      <!-- Loader -->
+      <div class="loader hidden" id="loader">
+        <div class="spinner"></div>
+        <p>Analyzing your food with AI...</p>
+      </div>
+
+      <!-- Error -->
+      <div class="error-box hidden" id="errorBox">
+        <i class="fas fa-exclamation-circle"></i>
+        <span id="errorMsg"></span>
+      </div>
+
+    </div>
+
+    <!-- ── RESULTS ── -->
+    <div class="results hidden" id="results">
+
+      <!-- Food Header -->
+      <div class="result-header">
+        <div class="result-image-wrap">
+          <img id="resultImg" src="" alt=""/>
+        </div>
+        <div class="result-title-block">
+          <p class="result-label">Detected Food</p>
+          <h2 id="resultFoodName"></h2>
+          <div class="confidence-bar-wrap">
+            <span>Confidence</span>
+            <div class="confidence-bar">
+              <div class="confidence-fill" id="confidenceFill"></div>
+            </div>
+            <span id="confidenceText"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Health Score -->
+      <div class="score-card">
+        <div class="score-circle-wrap">
+          <svg viewBox="0 0 120 120" class="score-ring">
+            <circle cx="60" cy="60" r="50" class="ring-bg"/>
+            <circle cx="60" cy="60" r="50" class="ring-fill" id="scoreRing"/>
+          </svg>
+          <div class="score-number">
+            <span id="scoreValue"></span>
+            <small>/10</small>
+          </div>
+        </div>
+        <div class="score-info">
+          <h3>Health Score</h3>
+          <p class="score-label-text" id="scoreLabel"></p>
+          <div class="score-breakdown" id="scoreBreakdown"></div>
+        </div>
+      </div>
+
+      <!-- Nutrition Grid -->
+      <div class="section-title"><i class="fas fa-chart-pie"></i> Nutrition Per 100g</div>
+      <div class="nutrition-grid" id="nutritionGrid"></div>
+
+      <!-- Dietary Tags -->
+      <div class="section-title"><i class="fas fa-tags"></i> Dietary Tags</div>
+      <div class="tags-wrap" id="dietaryTags"></div>
+
+      <!-- Vitamins & Minerals -->
+      <div class="two-col">
+        <div class="info-card">
+          <div class="section-title"><i class="fas fa-capsules"></i> Vitamins</div>
+          <ul id="vitaminsList"></ul>
+        </div>
+        <div class="info-card">
+          <div class="section-title"><i class="fas fa-atom"></i> Minerals</div>
+          <ul id="mineralsList"></ul>
+        </div>
+      </div>
+
+      <!-- Disease Prevention -->
+      <div class="section-title"><i class="fas fa-shield-alt"></i> Disease Prevention</div>
+      <ul class="benefit-list" id="diseaseList"></ul>
+
+      <!-- Advice -->
+      <div class="advice-card">
+        <div class="advice-icon"><i class="fas fa-lightbulb"></i></div>
+        <div>
+          <p class="advice-title">Personalized Advice</p>
+          <p id="adviceText"></p>
+        </div>
+      </div>
+
+      <!-- Top 3 Predictions -->
+      <div class="section-title"><i class="fas fa-brain"></i> AI Top Predictions</div>
+      <div class="top3-wrap" id="top3Wrap"></div>
+
+      <!-- Scan Again -->
+      <div class="center-btn">
+        <button class="btn btn-primary btn-lg" id="scanAgainBtn">
+          <i class="fas fa-redo"></i> Scan Another Food
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>AI-SmartNutriScan &copy; 2025 · Built with CLIP + Flask · For educational use only</p>
+  </footer>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
